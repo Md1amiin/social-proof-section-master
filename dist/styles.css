@@ -72,10 +72,12 @@ body {
   background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat;
   background-position: top, bottom;
-  display: flex;
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .social {
   display: flex;
@@ -85,6 +87,7 @@ body .social {
   gap: 2rem;
 }
 body .social .intro {
+  grid-area: intro;
   width: 20.75rem;
   height: 12.5rem;
   margin: 0 auto;
@@ -103,6 +106,9 @@ body .social .intro .details {
   color: hsl(303deg, 10%, 53%);
   text-align: center;
   font-size: 18px;
+}
+body .social .ratings {
+  grid-area: ratings;
 }
 body .social .ratings .rating {
   display: flex;
@@ -124,6 +130,7 @@ body .social .ratings .rating .ratingDetails {
   font-weight: 800;
 }
 body .social .opinions {
+  grid-area: opinions;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,4 +167,78 @@ body .social .opinions .customerOpinion .customerQuote {
   padding-top: 1rem;
   font-weight: 500;
   font-size: 1.02rem;
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+  }
+  body .social {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    width: 78%;
+    margin-top: 10px;
+  }
+  body .social .intro {
+    width: 50%;
+    height: 20.75rem;
+  }
+  body .social .intro .title {
+    width: 70%;
+    text-align: start;
+    margin-left: 0;
+    font-size: 3.7rem;
+    padding-bottom: 10rem;
+    font-weight: bold;
+    letter-spacing: -3px;
+    line-height: 0.8;
+  }
+  body .social .intro .details {
+    margin-top: 8px;
+    width: 80%;
+    text-align: start;
+  }
+  body .social .ratings {
+    font-size: 18px;
+    font-weight: 900;
+    width: 50%;
+    margin-top: 1rem;
+  }
+  body .social .ratings .rating {
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 80%;
+    height: 17.5%;
+    margin: 0;
+  }
+  body .social .ratings .rating1 {
+    margin: 1rem;
+  }
+  body .social .ratings .rating2 {
+    margin: 1rem 3.7rem;
+  }
+  body .social .ratings .rating3 {
+    margin: 1rem 7rem;
+  }
+  body .social .opinions {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    height: 17rem;
+  }
+  body .social .opinions .customerOpinion {
+    margin: 0;
+  }
+  body .social .opinions .opinion1 {
+    align-self: flex-start;
+  }
+  body .social .opinions .opinion2 {
+    align-self: center;
+  }
+  body .social .opinions .opinion3 {
+    align-self: flex-end;
+  }
 }/*# sourceMappingURL=styles.css.map */

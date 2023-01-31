@@ -1,4 +1,5 @@
 # Frontend Mentor - Social proof section
+# Solved by Mohamed Abdilahi Muse (Md1amiin)
 
 ![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
 
