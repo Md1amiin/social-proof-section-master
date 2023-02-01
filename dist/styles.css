@@ -81,14 +81,14 @@ body {
 }
 body .social {
   padding: 0;
-  width: 90%;
+  width: 20.5rem;
   height: 86.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  overflow-x: auto;
 }
 body .social .title {
-  border: 1px solid red;
   width: 16rem;
   margin: 5px auto;
   color: hsl(300deg, 43%, 22%);
@@ -102,9 +102,11 @@ body .social .details {
   text-align: center;
   font-size: 18px;
   padding: 0 0.2rem;
+  margin: 0 auto;
 }
 body .social .ratings .rating {
   background-color: hsl(300deg, 24%, 96%);
+  width: 20.5rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
   height: 5.5rem;
@@ -120,8 +122,10 @@ body .social .ratings .rating .ratingDetails {
   color: hsl(300deg, 43%, 22%);
   font-weight: 700;
 }
+body .social .opinions {
+  margin: 0 auto;
+}
 body .social .opinions .customerOpinion {
-  border: 1px solid red;
   background-color: hsl(300deg, 43%, 22%);
   color: hsl(0deg, 0%, 100%);
   height: 15.5rem;
@@ -153,6 +157,7 @@ body .social .opinions .customerOpinion .customerInfo .verified {
 body .social .opinions .customerOpinion .customerQuote {
   font-weight: 700;
 }
-body .social .opinions .opinion2, body .social .opinions .opinion3 {
+body .social .opinions .opinion2,
+body .social .opinions .opinion3 {
   margin-top: 1rem;
 }/*# sourceMappingURL=styles.css.map */

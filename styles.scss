@@ -101,14 +101,15 @@ body {
 
     .social {
         padding: 0;
-        width: 90%;
+        width: 20.5rem;
         height: 86.5rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        overflow-x: auto;
+
 
         .title {
-            @include border;
             width: 16rem;
             margin: 5px auto;
             color: $primary-very-dark-magenta;
@@ -123,11 +124,13 @@ body {
             text-align: center;
             font-size: $font-size * 1.2;
             padding: 0 0.2rem;
+            margin: 0 auto;
         }
 
         .ratings {
             .rating {
                 background-color: $neutral-light-grayish-magenta;
+                width: 20.5rem;
                 margin: 1rem 0;
                 border-radius: 0.5rem;
                 height: 5.5rem;
@@ -136,18 +139,21 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                .starIcons img{
-                        display: inline;
+                .starIcons img {
+                    display: inline;
                 }
+
                 .ratingDetails {
                     color: $primary-very-dark-magenta;
                     font-weight: $fw-bold;
                 }
             }
         }
+
         .opinions {
+            margin: 0 auto;
+
             .customerOpinion {
-                @include border;
                 background-color: $primary-very-dark-magenta;
                 color: $white;
                 height: 15.5rem;
@@ -159,30 +165,37 @@ body {
                 justify-content: center;
                 padding: 1rem 1.9rem;
                 font-size: $font-size * 1.1;
+
                 .customerDetails {
                     display: flex;
                     gap: 1.75rem;
+
                     img {
                         border-radius: 50%;
                         width: 3rem;
                     }
                 }
+
                 .customerInfo {
                     .customerName {
                         font-size: $font-size *1.2;
                         font-weight: $fw-bold;
                     }
+
                     .verified {
                         color: $primary-soft-pink;
                         font-size: $font-size *1.2;
                     }
                 }
+
                 .customerQuote {
                     font-weight: $fw-bold;
                 }
             }
-            .opinion2, .opinion3 {
-                margin-top: 1rem ;
+
+            .opinion2,
+            .opinion3 {
+                margin-top: 1rem;
             }
         }
     }
