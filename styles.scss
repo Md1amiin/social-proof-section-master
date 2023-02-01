@@ -103,13 +103,13 @@ body {
         padding: 0;
         width: 90%;
         height: 86.5rem;
-        overflow: hidden;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
 
         .title {
-            width: 78%;
+            @include border;
+            width: 16rem;
             margin: 5px auto;
             color: $primary-very-dark-magenta;
             font-weight: $fw-boldest;
@@ -147,9 +147,11 @@ body {
         }
         .opinions {
             .customerOpinion {
+                @include border;
                 background-color: $primary-very-dark-magenta;
                 color: $white;
                 height: 15.5rem;
+                width: 20.5rem;
                 border-radius: 0.5rem;
                 display: flex;
                 flex-direction: column;
