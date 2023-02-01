@@ -68,177 +68,89 @@ h6 {
 }
 
 body {
-  background-color: white;
-  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: top, bottom;
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
-  overflow: auto;
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-position: top, bottom;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  height: 100rem;
 }
 body .social {
+  padding: 0;
+  width: 90%;
+  height: 86.5rem;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  margin-top: 6rem;
-  gap: 2rem;
+  gap: 1.5rem;
 }
-body .social .intro {
-  grid-area: intro;
-  width: 20.75rem;
-  height: 12.5rem;
-  margin: 0 auto;
-}
-body .social .intro .title {
+body .social .title {
+  width: 78%;
+  margin: 5px auto;
   color: hsl(300deg, 43%, 22%);
-  font-size: 37.5px;
-  text-align: center;
   font-weight: 800;
-  width: 16rem;
-  height: 6rem;
-  margin: auto;
-  line-height: 0.75;
+  font-size: 37.5px;
+  line-height: 0.78;
+  text-align: center;
 }
-body .social .intro .details {
+body .social .details {
   color: hsl(303deg, 10%, 53%);
   text-align: center;
   font-size: 18px;
-}
-body .social .ratings {
-  grid-area: ratings;
+  padding: 0 0.2rem;
 }
 body .social .ratings .rating {
+  background-color: hsl(300deg, 24%, 96%);
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  height: 5.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 4.95rem;
-  margin: 1rem auto;
-  border-radius: 0.5rem;
-  background-color: hsl(300deg, 24%, 96%);
-  gap: 0.3rem;
 }
 body .social .ratings .rating .starIcons img {
   display: inline;
 }
 body .social .ratings .rating .ratingDetails {
   color: hsl(300deg, 43%, 22%);
-  font-weight: 800;
-}
-body .social .opinions {
-  grid-area: opinions;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  color: white;
+  font-weight: 700;
 }
 body .social .opinions .customerOpinion {
   background-color: hsl(300deg, 43%, 22%);
-  width: 89%;
+  color: hsl(0deg, 0%, 100%);
   height: 15.5rem;
-  margin: auto;
   border-radius: 0.5rem;
-  overflow: hidden;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 1.9rem;
+  font-size: 16.5px;
 }
 body .social .opinions .customerOpinion .customerDetails {
-  display: inline-grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  gap: 1.75rem;
 }
 body .social .opinions .customerOpinion .customerDetails img {
   border-radius: 50%;
-  height: 2.75rem;
+  width: 3rem;
 }
-body .social .opinions .customerOpinion .customerDetails .customerInfo {
-  padding-left: 1rem;
-}
-body .social .opinions .customerOpinion .customerDetails .customerInfo .customerName {
+body .social .opinions .customerOpinion .customerInfo .customerName {
+  font-size: 18px;
   font-weight: 700;
 }
-body .social .opinions .customerOpinion .customerDetails .customerInfo .verified {
+body .social .opinions .customerOpinion .customerInfo .verified {
   color: hsl(333deg, 80%, 67%);
+  font-size: 18px;
 }
 body .social .opinions .customerOpinion .customerQuote {
-  padding-top: 1rem;
-  font-weight: 500;
-  font-size: 1.02rem;
+  font-weight: 700;
 }
-@media screen and (min-width: 600px) {
-  body {
-    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
-    background-position: top left, bottom right;
-  }
-  body .social {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0;
-    width: 78%;
-    margin-top: 10px;
-  }
-  body .social .intro {
-    width: 50%;
-    height: 20.75rem;
-  }
-  body .social .intro .title {
-    width: 70%;
-    text-align: start;
-    margin-left: 0;
-    font-size: 3.7rem;
-    padding-bottom: 10rem;
-    font-weight: bold;
-    letter-spacing: -3px;
-    line-height: 0.8;
-  }
-  body .social .intro .details {
-    margin-top: 8px;
-    width: 80%;
-    text-align: start;
-  }
-  body .social .ratings {
-    font-size: 18px;
-    font-weight: 900;
-    width: 50%;
-    margin-top: 1rem;
-  }
-  body .social .ratings .rating {
-    flex-direction: row;
-    gap: 1.5rem;
-    width: 80%;
-    height: 17.5%;
-    margin: 0;
-  }
-  body .social .ratings .rating1 {
-    margin: 1rem;
-  }
-  body .social .ratings .rating2 {
-    margin: 1rem 3.7rem;
-  }
-  body .social .ratings .rating3 {
-    margin: 1rem 7rem;
-  }
-  body .social .opinions {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: row;
-    height: 17rem;
-  }
-  body .social .opinions .customerOpinion {
-    margin: 0;
-  }
-  body .social .opinions .opinion1 {
-    align-self: flex-start;
-  }
-  body .social .opinions .opinion2 {
-    align-self: center;
-  }
-  body .social .opinions .opinion3 {
-    align-self: flex-end;
-  }
+body .social .opinions .opinion2, body .social .opinions .opinion3 {
+  margin-top: 1rem;
 }/*# sourceMappingURL=styles.css.map */
