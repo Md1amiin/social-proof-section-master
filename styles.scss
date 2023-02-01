@@ -68,226 +68,25 @@ h6 {
     overflow-wrap: break-word;
 }
 
-//Custom styles
 //Colors
-$primary-dark-magenta: hsl(300, 43%, 22%);
+$primary-very-dark-magenta: hsl(300, 43%, 22%);
 $primary-soft-pink: hsl(333, 80%, 67%);
 $neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
 $neutral-light-grayish-magenta: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
 
-//Font info
+//Fonts
 $font-size: 15px;
 $font-family: 'League Spartan', sans-serif;
 $fw-light: 400;
 $fw-regular: 500;
 $fw-bold: 700;
-$fw-bolder: 800;
-$fw-boldest: 900;
-
-@mixin border {
-    border: 1px solid red;
-}
 
 body {
-    background-color: white;
-    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: top, bottom;
     font-family: $font-family;
     font-size: $font-size;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .social {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin-top: 6rem;
-        gap: 2rem;
-
-        .intro {
-            grid-area: intro;
-            width: 20.75rem;
-            height: 12.5rem;
-            margin: 0 auto;
-
-            .title {
-                color: $primary-dark-magenta;
-                font-size: $font-size * 2.5;
-                text-align: center;
-                font-weight: $fw-bolder;
-                width: 16rem;
-                height: 6rem;
-                margin: auto;
-                line-height: .75;
-            }
-
-            .details {
-                color: $neutral-dark-grayish-magenta;
-                text-align: center;
-                font-size: $font-size * 1.2;
-            }
-        }
-
-        .ratings {
-            grid-area: ratings;
-
-            .rating {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 90%;
-                height: 4.95rem;
-                margin: 1rem auto;
-                border-radius: 0.5rem;
-                background-color: $neutral-light-grayish-magenta;
-                gap: 0.3rem;
-
-                .starIcons img {
-                    display: inline;
-                }
-
-                .ratingDetails {
-                    color: $primary-dark-magenta;
-                    font-weight: $fw-bolder;
-                }
-            }
-        }
-
-        .opinions {
-            grid-area: opinions;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 1rem;
-            color: white;
-
-            .customerOpinion {
-                background-color: $primary-dark-magenta;
-                width: 89%;
-                height: 15.5rem;
-                margin: auto;
-                border-radius: 0.5rem;
-                overflow: hidden;
-                padding: 2rem;
-
-                .customerDetails {
-                    display: inline-grid;
-                    grid-template-columns: auto auto;
-
-                    img {
-                        border-radius: 50%;
-                        height: 2.75rem;
-                    }
-
-                    .customerInfo {
-                        padding-left: 1rem;
-
-                        .customerName {
-                            font-weight: $fw-bold;
-                        }
-
-                        .verified {
-                            color: $primary-soft-pink;
-                        }
-                    }
-                }
-
-                .customerQuote {
-                    padding-top: 1rem;
-                    font-weight: $fw-regular;
-                    font-size: 1.02rem;
-                }
-            }
-        }
-    }
-
-    @media screen and (min-width: 600px) {
-        background-image: url(../images/bg-pattern-top-desktop.svg),
-            url(../images/bg-pattern-bottom-desktop.svg);
-        background-position: top left, bottom right;
-
-        .social {
-            @include border();
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 0;
-            width: 78%;
-            margin-top: 10px;
-
-            .intro {
-                width: 50%;
-                height: 20.75rem;
-
-                .title {
-                    width: 70%;
-                    text-align: start;
-                    margin-left: 0;
-                    font-size: 3.7rem;
-                    padding-bottom: 10rem;
-                    font-weight: bold;
-                    letter-spacing: -3px;
-                    line-height: 0.8;
-                }
-
-                .details {
-                    margin-top: 8px;
-                    width: 80%;
-                    text-align: start;
-                }
-            }
-
-            .ratings {
-                font-size: $font-size * 1.2;
-                font-weight: $fw-boldest;
-                width: 50%;
-                margin-top: 1rem;
-
-                .rating {
-                    flex-direction: row;
-                    gap: 1.5rem;
-                    width: 80%;
-                    height: 17.5%;
-                    margin: 0;
-                }
-
-                .rating1 {
-                    margin: 1rem;
-                }
-
-                .rating2 {
-                    margin: 1rem 3.7rem;
-                }
-
-                .rating3 {
-                    margin: 1rem 7rem;
-                }
-            }
-
-            .opinions {
-                @include border;
-                display: flex;
-                flex-direction: row;
-                height: 17rem;
-                .customerOpinion {
-                    margin: 0;
-                }
-
-                .opinion1 {
-                    align-self: flex-start;
-                }
-                .opinion2 {
-                    align-self: center;
-                }
-                .opinion3 {
-                    align-self: flex-end;
-                }
-            }
-        }
-    }
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    
 }
