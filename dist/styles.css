@@ -175,11 +175,14 @@ body .social .opinions .opinion3 {
   body {
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
     background-position: top left, bottom right;
+    height: 100%;
   }
   body .social {
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
+    height: 80%;
+    margin-top: 5%;
     flex-wrap: wrap;
   }
   body .social .intro {
@@ -205,7 +208,7 @@ body .social .opinions .opinion3 {
     width: 80%;
     height: 3.5rem;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     margin: 1rem 0;
   }
   body .social .ratings .rating .starIcons {
@@ -225,17 +228,34 @@ body .social .opinions .opinion3 {
   }
   body .social .opinions {
     width: 100%;
-    height: 30%;
-    margin-top: -50%;
+    height: 60%;
+    margin-top: 155px;
     display: grid;
     grid-template-columns: auto auto auto;
   }
   body .social .opinions .customerOpinion {
-    width: 95%;
+    width: 93.2%;
+    height: 100%;
+    font-size: 110%;
   }
+}
+@media screen and (min-width: 800px) and (min-width: 1000px) {
+  body .social .opinions .customerOpinion {
+    height: 60.5%;
+  }
+}
+@media screen and (min-width: 800px) {
+  body .social .opinions .customerOpinion .customerDetails img {
+    width: 18%;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 800px) {
   body .social .opinions .opinion2 {
     margin-top: 2rem;
   }
+}
+@media screen and (min-width: 800px) {
   body .social .opinions .opinion3 {
     margin-top: 4rem;
   }
