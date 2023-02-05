@@ -183,8 +183,16 @@ body .social .opinions .opinion3 {
     width: 80%;
     height: 80%;
     margin-top: 5%;
+    margin-left: 3%;
     flex-wrap: wrap;
   }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) and (min-width: 800px) {
+  body .social {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 800px) {
   body .social .intro {
     width: 35.8%;
     height: 17.8%;
@@ -200,25 +208,34 @@ body .social .opinions .opinion3 {
     text-align: left;
     font-size: 17.2px;
   }
+}
+@media screen and (min-width: 800px) {
   body .social .ratings {
     height: 18%;
     width: 50%;
   }
   body .social .ratings .rating {
-    width: 80%;
+    width: 78%;
     height: 3.5rem;
     flex-direction: row;
+    justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
   }
   body .social .ratings .rating .starIcons {
+    margin-left: -60px;
     display: inline;
     height: 37%;
+    width: 18%;
   }
   body .social .ratings .rating .starIcons .star {
-    width: 10%;
-    margin-left: 3px;
-    height: 100%;
+    width: 0.7vw;
+    margin-left: 3%;
+    height: 90%;
+  }
+  body .social .ratings .rating .ratingDetails {
+    font-size: 1.4vw;
+    margin-left: 0px;
   }
   body .social .ratings .rating2 {
     margin-left: 3rem;
@@ -226,13 +243,22 @@ body .social .opinions .opinion3 {
   body .social .ratings .rating3 {
     margin-left: 6rem;
   }
+}
+@media screen and (min-width: 800px) {
   body .social .opinions {
     width: 100%;
     height: 60%;
-    margin-top: 155px;
+    margin-top: 167px;
     display: grid;
     grid-template-columns: auto auto auto;
   }
+}
+@media screen and (min-width: 800px) and (max-width: 1050px) and (min-width: 800px) {
+  body .social .opinions {
+    margin-top: 200px;
+  }
+}
+@media screen and (min-width: 800px) {
   body .social .opinions .customerOpinion {
     width: 93.2%;
     height: 100%;

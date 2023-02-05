@@ -221,7 +221,11 @@ body {
             justify-content: space-between;
             width: 80%;
             height: 80%;
+            @media screen and (max-width: 1200px) and (min-width: 800px) {
+                height: 100%;
+            }
             margin-top: 5%;
+            margin-left: 3%;
             flex-wrap: wrap;
             .intro {
                 width: 35.8%;
@@ -242,21 +246,29 @@ body {
                 height: 18%;
                 width: 50%;
                 .rating {
-                    width: 80%;
+                    width: 78%;
                     height: 3.5rem;
                     flex-direction: row;
+                    justify-content: center;
                     gap: 1rem;
                     margin: 1rem 0;
                     .starIcons {
+                        margin-left: -60px;
                         display: inline;
                         height: 37%;
+                        width: 18%;
                         .star {
                             //width: 18px;
-                            width: 10%;
-                            margin-left: 3px;
+                            //width: 10%;
+                            width: 0.7vw;
+                            margin-left: 3%;
                             //height: 18px;
-                            height: 100%;
+                            height: 90%;
                         }
+                    }
+                    .ratingDetails {
+                        font-size: 1.4vw;
+                        margin-left: 0px;
                     }
                 }
                 .rating2 {
@@ -267,9 +279,12 @@ body {
                 }
             }
             .opinions {
+                @media screen and (max-width: 1050px) and (min-width: 800px)  {
+                    margin-top: 200px;
+                }
                 width: 100%;
                 height: 60%;
-                margin-top: 155px;
+                margin-top: 167px;
                 display: grid;
                 grid-template-columns: auto auto auto;
 
