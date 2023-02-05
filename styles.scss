@@ -1,3 +1,4 @@
+
 //CSS reset
 /*
   1. Use a more-intuitive box-sizing model.
@@ -99,6 +100,7 @@ body {
     flex-wrap: wrap;
     height: 100rem;
 
+
     .social {
         padding: 0;
         width: 20.5rem;
@@ -108,8 +110,12 @@ body {
         gap: 1.5rem;
         overflow-x: auto;
 
+        .intro {
+            grid-area: intro;
+        }
 
         .title {
+            grid-area: title;
             width: 16rem;
             margin: 5px auto;
             color: $primary-very-dark-magenta;
@@ -120,14 +126,18 @@ body {
         }
 
         .details {
+            grid-area: details;
             color: $neutral-dark-grayish-magenta;
+            font-weight: $fw-regular;
             text-align: center;
             font-size: $font-size * 1.2;
-            padding: 0 0.2rem;
+            padding: 1rem 0.2rem 0 0.2rem;
             margin: 0 auto;
         }
 
         .ratings {
+            grid-area: ratings;
+
             .rating {
                 background-color: $neutral-light-grayish-magenta;
                 width: 20.5rem;
@@ -151,6 +161,7 @@ body {
         }
 
         .opinions {
+            grid-area: opinions;
             margin: 0 auto;
 
             .customerOpinion {
@@ -196,6 +207,79 @@ body {
             .opinion2,
             .opinion3 {
                 margin-top: 1rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        background-image: url(../images/bg-pattern-top-desktop.svg), 
+        url(../images/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        .social {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            flex-wrap: wrap;
+            .intro {
+                width: 35.8%;
+                height: 17.8%;
+                .title {
+                    width: 100%;
+                    text-align: left;
+                    margin: 0;
+                    font-size: 3rem;
+                    line-height: 1;
+                }
+                .details {
+                    text-align: left;
+                    font-size: 17.2px;
+                }
+            }
+            .ratings {
+                height: 18%;
+                width: 50%;
+                .rating {
+                    width: 80%;
+                    height: 3.5rem;
+                    flex-direction: row;
+                    gap: 2rem;
+                    margin: 1rem 0;
+                    .starIcons {
+                        display: inline;
+                        height: 37%;
+                        .star {
+                            //width: 18px;
+                            width: 10%;
+                            margin-left: 3px;
+                            //height: 18px;
+                            height: 100%;
+                        }
+                    }
+                }
+                .rating2 {
+                    margin-left: 3rem;
+                }
+                .rating3 {
+                    margin-left: 6rem;
+                }
+            }
+            .opinions {
+                
+                width: 100%;
+                height: 30%;
+                margin-top: -50%;
+                display: grid;
+                grid-template-columns: auto auto auto;
+
+                .customerOpinion {
+                    width: 95%;
+                }
+                .opinion2 {
+                    margin-top: 2rem;
+                }
+                .opinion3 {
+                    margin-top: 4rem;
+                }
             }
         }
     }

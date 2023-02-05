@@ -88,7 +88,11 @@ body .social {
   gap: 1.5rem;
   overflow-x: auto;
 }
+body .social .intro {
+  grid-area: intro;
+}
 body .social .title {
+  grid-area: title;
   width: 16rem;
   margin: 5px auto;
   color: hsl(300deg, 43%, 22%);
@@ -98,11 +102,16 @@ body .social .title {
   text-align: center;
 }
 body .social .details {
+  grid-area: details;
   color: hsl(303deg, 10%, 53%);
+  font-weight: 500;
   text-align: center;
   font-size: 18px;
-  padding: 0 0.2rem;
+  padding: 1rem 0.2rem 0 0.2rem;
   margin: 0 auto;
+}
+body .social .ratings {
+  grid-area: ratings;
 }
 body .social .ratings .rating {
   background-color: hsl(300deg, 24%, 96%);
@@ -123,6 +132,7 @@ body .social .ratings .rating .ratingDetails {
   font-weight: 700;
 }
 body .social .opinions {
+  grid-area: opinions;
   margin: 0 auto;
 }
 body .social .opinions .customerOpinion {
@@ -160,4 +170,73 @@ body .social .opinions .customerOpinion .customerQuote {
 body .social .opinions .opinion2,
 body .social .opinions .opinion3 {
   margin-top: 1rem;
+}
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+  }
+  body .social {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  body .social .intro {
+    width: 35.8%;
+    height: 17.8%;
+  }
+  body .social .intro .title {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  body .social .intro .details {
+    text-align: left;
+    font-size: 17.2px;
+  }
+  body .social .ratings {
+    height: 18%;
+    width: 50%;
+  }
+  body .social .ratings .rating {
+    width: 80%;
+    height: 3.5rem;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+  body .social .ratings .rating .starIcons {
+    display: inline;
+    height: 37%;
+  }
+  body .social .ratings .rating .starIcons .star {
+    width: 10%;
+    margin-left: 3px;
+    height: 100%;
+  }
+  body .social .ratings .rating2 {
+    margin-left: 3rem;
+  }
+  body .social .ratings .rating3 {
+    margin-left: 6rem;
+  }
+  body .social .opinions {
+    width: 100%;
+    height: 30%;
+    margin-top: -50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  body .social .opinions .customerOpinion {
+    width: 95%;
+  }
+  body .social .opinions .opinion2 {
+    margin-top: 2rem;
+  }
+  body .social .opinions .opinion3 {
+    margin-top: 4rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
